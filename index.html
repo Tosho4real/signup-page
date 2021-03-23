@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <script>
+        function showpw() {
+          var pw = document.getElementById("showpw");
+          if (pw.type == "text") pw.type = "password";
+          else pw.type = "text";
+        }
+      </script>
+      <div class="login-background">
+        <h1 class="header">Create Account</h1>
+        <p class="header-p">It's free and hardly takes more than 30 seconds.</p>
+        <br />
+        <div class="login">
+          <form class="input">
+            <div class="user-icon">
+              <img
+                src="images/user-alt.png"
+                alt="user user-icon"
+                class="user-img-icon"
+              />
+              <input type="text" class="input-space" placeholder="Username" />
+            </div>
+            <div class="email-icon">
+              <img
+                class="img-email-icon"
+                src="images/location-Arrow.png"
+                alt="user-email-icon"
+              />
+              <input
+                type="text"
+                class="input-space"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="password-icon">
+              <img
+                src="images/lock-password.png"
+                alt="password user-icon"
+                class="password"
+              />
+                <input
+                  type="password"
+                  id="showpw"
+                  class="input-space"
+                  placeholder="Password"
+                />
+                <button class="icon" onclick="showpw();">
+                  <i class="fas fa-eye"></i>
+                </button>
+            </div>
+            <div class="confirm-password">
+              <img
+                src="images/confirm-password.png"
+                alt="confirm-password-icon"
+                class="comfirm-password"
+              />
+              <input
+                type="password"
+                class="input-space"
+                placeholder="Confirm Password"
+              />
+            </div>
+
+            <button type="button" class="toggle-btn">Sign Up</button>
+            <br />
+            <p class="h6">
+              By clicking the Sign Up button, you agree to our
+              <a href="#">Terms & Conditions</a>, and Privacy Policy.
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
